@@ -1,0 +1,19 @@
+#%RAML 0.8
+title: Jukebox API
+  
+
+/songs: 
+  description: lists all the songs available in the application
+  get: 
+    description: fetch all the songs 
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: | 
+              {"note":"congrats your songs are okay"}
+              
+  post: 
+  
+/albums:
+  description: lists all the albums available 
